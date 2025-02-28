@@ -1,0 +1,123 @@
+body {
+  /* background-color: #f9f9f9; */
+  font-family: Open Sans,Helvetica,sans-serif;
+  /* font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; */
+  font-size:13px;
+  min-width:500px;
+}
+
+#icon {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  float: left;
+}
+
+.header {
+  font-size: 14px;
+  background: #23385B;
+  color:white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: bold;
+  padding-left: 10px;
+  width: 500px;
+}
+
+#title > h1 {
+  font-size: 20px;
+  margin-bottom: 3px;
+}
+
+#title > h2 {
+  font-size: 13px;
+  margin-top: 3px;
+  font-weight: normal;
+}
+
+#content, html, body {
+  height: 95%;
+}
+
+#main {
+  height:470px;
+}
+
+#loading {
+  height: 500px;
+  width: 500px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#container {
+  float: left;
+  height: 100%;
+  overflow: scroll;
+}
+
+#right {
+  float: left;
+  height: 100%;
+  overflow: scroll;
+}
+
+/* #container {
+  padding: 5px;
+  background-color: black;
+  color: #EEC97D;
+  font-size: 13px;
+  height: 450px;
+  width: 600px;
+  overflow: scroll;
+} */
+
+/* .searchresult {
+  background-color: white;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+#recordbrowser {
+  width: 600px;
+  text-align: center;
+  visibility: hidden;
+} */
+
+#scripts {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#scripts td, #scripts th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#scripts tr:nth-child(even){background-color: #f2f2f2;}
+
+#scripts tr:hover {background-color: #ddd;}
+
+#scripts th {
+  padding-top: 7px;
+  padding-bottom: 7px;
+  text-align: left;
+  background-color: #DEE1E7;
+  color: #24386A;
+}
+
+#footer {
+  color: #5e5e5e;
+}
+
+a {
+  color: #5e5e5e;
+}
+
+ul {
+  margin:7px;
+}
+li{
+  margin: 7px;
+}

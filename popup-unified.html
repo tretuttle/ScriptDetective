@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>NetSuite Scripted Records</title>
+    <link rel="stylesheet" type="text/css" href="dkhjafbceiceaidnbbilhphhkanlpkkj/css/popup.css">
+    <link rel="stylesheet" type="text/css" href="dkhjafbceiceaidnbbilhphhkanlpkkj/css/github.css">
+    <script src="lib/browser-polyfill.js"></script>
+</head>
+
+<body>
+    <div id="title" align="center">
+        <img src="dkhjafbceiceaidnbbilhphhkanlpkkj/img/netsuite.png" style="margin:10px">&nbsp;&nbsp;
+    </div>
+
+    <div id="loading">
+        <img src="dkhjafbceiceaidnbbilhphhkanlpkkj/img/loading1.gif"></img>
+    </div>
+
+    <div id="main">
+        <div id="container">
+            <div id="userEventScripts"></div>
+            <br/>
+            <div id="clientScripts"></div>
+            <br/>
+            <div id="workflowScripts"></div>
+            <br/>
+            <div id="debug-output" style="font-family: monospace; font-size: 12px; background-color: #f0f0f0; padding: 5px; height: 100px; overflow: auto; margin-top: 10px; border: 1px solid #ccc;">
+                [Debug Log]
+            </div>
+        </div>
+        <div id="right" style="display:none">
+            <a id="back"><img src="dkhjafbceiceaidnbbilhphhkanlpkkj/img/back.png" height="40px"></a>
+
+            <div>
+                <table id="scripts" style="width:400px">
+                    <tr>
+                        <td style="width:150px">Id:</td>
+                        <td><span id="scriptId"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Script file:</td>
+                        <td><span id="scriptFile"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Owner:</td>
+                        <td><span id="scriptOwner"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Inactive:</td>
+                        <td><span id="isInactive"></span></td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <div id="output">
+            </div>
+        </div>
+    </div>
+    <div id="footer" style="vertical-align:middle;">
+        <table width="100%">
+            <tr>
+                <td style="width:33%">
+                    <span id="browser-type" style="font-size:10px;color:#777;"></span>
+                </td>
+                <td style="width:33%">by <a href="mailto:marcelpestana@gmail.com" id="mailLink">Marcel Pestana</a></td>
+                <td align="right">
+                    <a href="https://www.buymeacoffee.com/marcelpestana" target="_blank" id="support-button">
+                        <img src="https://cdn.buymeacoffee.com/buttons/v2/default-blue.png" alt="Buy Me A Coffee" style="width:130px">
+                    </a>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <script src="dkhjafbceiceaidnbbilhphhkanlpkkj/lib/prettify.js"></script>
+    <script src="dkhjafbceiceaidnbbilhphhkanlpkkj/lib/jquery-1.11.2.min.js"></script>
+    <script src="js/popup-unified.js"></script>
+</body>
+
+</html>

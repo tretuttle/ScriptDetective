@@ -1,0 +1,46 @@
+{
+  "manifest_version": 2,
+  "name": "NetSuite Scripted Records",
+  "description": "See the customizations deployed to your records",
+  "author": "Marcel Pestana <marcelpestana@gmail.com>",
+  "version": "2.0",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "netsuite-scripted-records@marcelpestana.com",
+      "strict_min_version": "57.0"
+    }
+  },
+  "icons": {
+    "48": "img/icon48.png",
+    "128": "img/icon128.png"
+  },
+  "background": {
+    "scripts": ["js/browser-polyfill.js", "js/background.js"],
+    "persistent": false
+  },
+  "browser_action": {
+    "default_title": "NetSuite Scripted Records",
+    "default_popup": "popup-v3.html",
+    "default_icon": {
+      "24": "img/icon24.png",
+      "32": "img/icon32.png",
+      "48": "img/icon48.png",
+      "128": "img/icon128.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*.netsuite.com/app/*"],
+      "all_frames": false,
+      "run_at": "document_end",
+      "js": ["js/browser-polyfill.js", "lib/jquery-1.11.2.min.js"]
+    }
+  ],
+  "permissions": [
+    "activeTab",
+    "https://*.netsuite.com/*"
+  ],
+  "web_accessible_resources": [
+    "js/scriptrecordhelper-v3.js"
+  ]
+}

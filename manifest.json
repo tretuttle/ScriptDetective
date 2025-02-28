@@ -1,0 +1,49 @@
+{
+  "manifest_version": 3,
+  "name": "NetSuite Scripted Records",
+  "description": "See the customizations deployed to your records",
+  "author": "Marcel Pestana <marcelpestana@gmail.com>",
+  "version": "2.0",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "netsuite-scripted-records@marcelpestana.com",
+      "strict_min_version": "109.0"
+    }
+  },
+  "icons": {
+    "48": "dkhjafbceiceaidnbbilhphhkanlpkkj/img/icon48.png",
+    "128": "dkhjafbceiceaidnbbilhphhkanlpkkj/img/icon128.png"
+  },
+  "background": {
+    "scripts": ["lib/browser-polyfill.js", "js/background-unified.js"]
+  },
+  "action": {
+    "default_title": "NetSuite Scripted Records",
+    "default_popup": "popup-unified.html",
+    "default_icon": {
+      "24": "dkhjafbceiceaidnbbilhphhkanlpkkj/img/icon24.png", 
+      "32": "dkhjafbceiceaidnbbilhphhkanlpkkj/img/icon32.png",
+      "48": "dkhjafbceiceaidnbbilhphhkanlpkkj/img/icon48.png",
+      "128": "dkhjafbceiceaidnbbilhphhkanlpkkj/img/icon128.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*.netsuite.com/app/*"],
+      "all_frames": false,
+      "run_at": "document_end",
+      "js": ["lib/browser-polyfill.js", "dkhjafbceiceaidnbbilhphhkanlpkkj/lib/jquery-1.11.2.min.js", "js/content-unified.js"]
+    }
+  ],
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://*.netsuite.com/*"
+  ],
+  "web_accessible_resources": [{
+    "resources": ["js/scriptrecordhelper-unified.js", "js/*", "dkhjafbceiceaidnbbilhphhkanlpkkj/img/*", "dkhjafbceiceaidnbbilhphhkanlpkkj/lib/*"],
+    "matches": ["<all_urls>"]
+  }]
+}
